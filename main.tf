@@ -1,13 +1,13 @@
 ### PROVIDER
 provider "google" {
-  project = "advancedterraform" #replace this with your project-id
+  project = "advancedterraform-462203" #replace this with your project-id
   region  = "us-central1"
-  zone    = "us-central1-a"
+  zone    = "us-central1-c"
 }
 
 ### NETWORK
 data "google_compute_network" "default" {
-  name                    = "default"
+  name = "default"
 }
 
 ## SUBNET
